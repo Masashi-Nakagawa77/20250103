@@ -10,9 +10,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>購入ページ</title>
+    <title>購入完了ページ</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -20,13 +19,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <header>
-        <div id="user-info"></div>
-        <h1>課題用Webサイト</h1>
-        <button id="login-button"></button>
+        <div id="user-info" class="user-info"></div>
+        <div class="site-name">課題用Webサイト</div>
+        <button id="login-button" data-logged-in="false">ログイン</button>
     </header>
-    <main>
-        <h2>THANKS</h2>
-        <a href="item.html" class="back-button">商品ページへ戻る</a>
-    </main>
+    <div class="container" style="text-align: center;">
+        <h1>THANKS</h1>
+        <button onclick="location.href='/item.html'">商品ページに戻る</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

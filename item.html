@@ -20,7 +20,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品ページ</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -28,19 +27,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <header>
-        <div id="user-info"></div>
-        <h1>課題用Webサイト</h1>
-        <button id="login-button"></button>
+        <div id="user-info" class="user-info"></div>
+        <div class="site-name">課題用Webサイト</div>
+        <button id="login-button" data-logged-in="false">ログイン</button>
     </header>
-    <main>
-        <h2>商品ページ</h2>
-        <div class="product">
+    <div class="container">
+        <div class="item-info">
             <img src="z4.jpg" alt="Z4">
-            <h3>商品名: Z4</h3>
+            <h1>Z4</h1>
             <p>カテゴリ: 車</p>
             <p>価格: 100円</p>
-            <a href="thanks.html" class="purchase-button">購入</a>
+            <button onclick="location.href='/thanks.html'">購入</button>
         </div>
-    </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
