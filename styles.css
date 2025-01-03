@@ -1,51 +1,61 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .site-name {
+    font-size: 1.5em;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+header .user-info span {
+    margin-right: 20px;
+}
+
+button {
     padding: 10px 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ccc;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
-header h1 {
-    margin: 0;
-    flex-grow: 1;
-    text-align: center;
+button:hover {
+    background-color: #0056b3;
 }
 
-header #user-info {
-    margin-right: auto;
-}
-
-header button {
-    padding: 5px 10px;
-}
-
-main {
+.container {
     padding: 20px;
 }
 
-.product {
-    margin-top: 20px;
+.item-info {
+    text-align: center;
 }
 
-.purchase-button, .back-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+.item-info img {
+    width: 300px;
+    height: auto;
 }
 
-.purchase-button:hover, .back-button:hover {
-    background-color: #0056b3;
+.item-info h1 {
+    margin: 10px 0;
+}
+
+.item-info p {
+    margin: 5px 0;
 }
