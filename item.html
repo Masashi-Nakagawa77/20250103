@@ -1,45 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  dataLayer.push({
-    event: "purchase",
-    item_name: "z4",
-    item_price: "100円",
-  });
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TSZZLR56');</script>
-<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品ページ</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSZZLR56"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
     <header>
-        <div id="user-info" class="user-info"></div>
-        <div class="site-name">課題用Webサイト</div>
-        <button id="login-button" data-logged-in="false">ログイン</button>
+        <div id="header-left"></div>
+        <div id="header-center">課題用Webサイト</div>
+        <button id="login-button" value="logged-out">ログイン</button>
     </header>
-    <div class="container">
-        <div class="item-info">
-            <img src="z4.jpg" alt="Z4">
-            <h1>Z4</h1>
-            <p>カテゴリ: 車</p>
-            <p>価格: 100円</p>
-            <button onclick="location.href='/20250103/thanks.html'">購入</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <main>
+        <h1>商品ページ</h1>
+        <img src="z4.jpg" alt="Z4">
+        <p>商品名: Z4</p>
+        <p>商品カテゴリ: 車</p>
+        <p>価格: 100円</p>
+        <button id="purchase-button" onclick="location.href='/20250103/thanks.html'">購入</button>
+    </main>
 </body>
 </html>
