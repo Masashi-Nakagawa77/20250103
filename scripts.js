@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             loginButton.textContent = 'ログアウト';
             loginButton.value = 'logged-in';
             // データレイヤーにuser-idを追加
-            window.dataLayer.push({ 'user-id': 'nakagawa' });
+            window.dataLayer.push({ 'user-id': '19771201' });
         } else {
             headerLeft.textContent = '';
             loginButton.textContent = 'ログイン';
